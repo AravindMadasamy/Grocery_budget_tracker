@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grocery Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🛒 Grocery Budget Tracker</h1>
+
+    <div class="budget-section">
+      <label for="budget">Monthly Budget (₹):</label>
+      <input type="number" id="budget" placeholder="Enter budget"/>
+      <button onclick="setBudget()">Set Budget</button>
+    </div>
+
+    <div class="summary">
+      <p>Total Budget: ₹<span id="total-budget">0</span></p>
+      <p>Total Spent: ₹<span id="total-spent">0</span></p>
+      <p>Remaining: ₹<span id="remaining">0</span></p>
+    </div>
+
+    <div class="add-item">
+      <input type="text" id="item-name" placeholder="Item name" />
+      <input type="number" id="item-cost" placeholder="Cost ₹" />
+      <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <ul id="item-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
